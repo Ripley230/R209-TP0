@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'myfirstapp/style_sphère.css' %}">
+</head>
+<body>
+<fieldset>
+    <legend>Calcul de la surface ou du volume d'une sphere</legend>
+    <div class="img">
+        <img src="https://i.ibb.co/3zv9QQS/sphere.png">
+    </div>
+    <form action="#" method="POST">
+        <div class="item_radio">
+            <input type="radio" id="surf" name="sphere" value="surface">
+            <label for="surf">Surface</label>
+            <input type="radio" id="vol" name="sphere" value="volume" checked="checked">
+            <label for="vol">Volume</label>
+        </div>
+        <div class="item_text">
+            <label for="rayon">Rayon en mètres : </label>
+            <input type="text" id="rayon" name="rayon">
+        </div>
+        <div class="submit_button">
+            <input type="submit" value="Calculer">
+        </div>
+    </form>
+</fieldset>
+</body>
+</html>

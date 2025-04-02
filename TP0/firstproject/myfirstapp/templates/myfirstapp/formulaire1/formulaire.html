@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'myfirstapp/style.css' %}">
+</head>
+<body>
+<form action="#" method="post">
+        <label for="nom"> Nom :</label>
+        <input type="text" name="nom"/>
+        <label for="email"> email :</label>
+        <input type="email" name="email"/>
+        <label for="sujet"> sujet :</label>
+        <input type="text" name="sujet"/>
+        <label for="messsage"> message :</label>
+        <input type="text" name="message"/>
+        <input type="submit" value="envoyer"/>
+</form>
+</body>
+</html>
