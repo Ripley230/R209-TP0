@@ -12,7 +12,8 @@ def traitement(request):
     message = request.GET["message"]
     return render(request, 'myfirstapp/formulaire1/traitement.html', {"nom": nom, "email": email, "sujet": sujet, "message": message})
 
-
+def fruit(request):
+    return render(request, 'myfirstapp/formulaire2/fruit.html')
 
 def sphère(request):
     return render(request, 'myfirstapp/formulaire3/sphère.html')
